@@ -14,7 +14,7 @@ import io from "socket.io-client";
 const SOCKET_SERVER_URL = "http://192.168.1.63:3000"; // change if needed
 const ICE_SERVERS = [
   { urls: "stun:192.168.1.63:3478" }, // your local STUN
-  { urls: "stun:stun.l.google.com:19302" } // fallback
+  // { urls: "stun:stun.l.google.com:19302" } // fallback
 ];
 
 const socket = io(SOCKET_SERVER_URL, {
